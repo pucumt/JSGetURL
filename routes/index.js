@@ -1,11 +1,15 @@
-﻿module.exports = function(app)
+﻿var url1 = require('../models/getmanmanbuy.js');
+
+module.exports = function(app)
 {
 	app.get('/', function(req, res)
 	{
-		res.render('index', {
-			title: '主页',
-			posts: posts
+		url1(function(posts)
+		{
+			res.render('index', {
+				title: '主页',
+				posts: posts
+			});
 		});
-
 	});
 };
