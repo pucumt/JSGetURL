@@ -25,24 +25,11 @@ var _hmt = _hmt || [];
 <nav class="main-navigation">
     <div class="container">
         <div class="row">
-        <div class="col-sm-12 text-left">
+        <div class="col-sm-24 text-left">
         <h3>
             通城都市岛
         </h3>
         </div>
-            <div class="col-sm-12">
-                <div class="collapse navbar-collapse" id="main-menu">
-                    <ul class="nav navbar-nav pull-right">
-                            <li role="presentation"><a href="/">首页</a></li>
-                            <% if (user) { %>
-                            <li role="presentation"><a href="/post">爆料</a></li><li role="presentation"><a href="/logout"><%=user.name%>(退出)</a></li>
-<% } else { %>
-<li role="presentation"><a href="/login">登录</a></li>
-<li role="presentation"><a href="/reg">注册</a></li>
-<% } %>
-                    </ul>   
-                </div>
-            </div>
         </div>
     </div>
 </nav>
