@@ -1,12 +1,27 @@
 {
 	"name": "JSGetURL",
-	"version": "0.0.0",
-	"description": "JSGetURL",
-	"main": "app.js",
-	"author": {
-		"name": "WeiPu"
+	"version": "1.0.0",
+	"private": true,
+	"description": "weple JSGetURL",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pucumt/JSGetURL.git"
+	},
+	"license": "GPL",
+	"scripts": {
+		"start": "node app.js",
+		"test": "node-debug app.js"
 	},
 	"dependencies": {
+		"express": "4.10.2",
+		"body-parser": "1.9.0",
+		"cookie-parser": "1.3.3",
+		"morgan": "1.3.1",
+		"serve-favicon": "2.1.5",
+		"ejs": "1.0.0",
+		"mongoose": "^4.0.1",
+		"shortid": "^2.2.4",
+		"moment": "^2.10.3",
 		"q": "^1.4.1",
 		"jsdom": "^8.1.0",
 		"jquery": "^2.1.4"
