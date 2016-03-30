@@ -9,14 +9,17 @@ var login = function()
 
 	var req = http.request("http://cu.manmanbuy.com", function(res)
 	{
+		var html = '';
+
 		res.on('data', function(chunk)
 		{
-			if (res.statusCode == "200")
-			{
-				return deferred.resolve();
-			}
-			return deferred.reject();
-		});
+			html += chunk;
+		})
+        .on('end', function()
+        {
+        	var a = $(html);
+        	return deferred.resolve(getposts(a.find("#retlistnewdiv")));
+        });
 	});
 
 	req.on('error', function(e)
@@ -25,15 +28,33 @@ var login = function()
 		return deferred.reject();
 	});
 
-	req.write(data + "\n");
-
 	req.end();
 	return deferred.promise;
 };
 
+var getposts = function(list)
+{
+	var posts = [];
+	list.find(".infolist").each(function(index)
+	{
+		var tds = $(this).find("tr:first td");
+		var post = {
+			title: $(tds[1]).find("a:first").attr("title"),
+			price: $(tds[1]).find("a:first span").text(),
+			imgFile: $(tds[0]).find("img").attr("src"),
+			post: $(tds[1]).find(".infoD").text(),
+			linkAddr: "http://cu.manmanbuy.com/" + $(tds[1]).find("a:first").attr("href")
+		};
+		posts.push(post);
+	});
+
+	return posts;
+};
 
 module.exports = function(callback)
 {
-	login();
-	callback([]);
+	login().then(function(data)
+	{
+		callback(data);
+	});
 };

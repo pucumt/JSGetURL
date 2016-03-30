@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var swig = require('swig');
 var routes = require('./routes/index.js');
 
 var fs = require('fs');
@@ -15,7 +15,8 @@ var app = express();
 
 app.set('port', process.env.PORT || 3008);
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('view engine', 'html');
+app.engine('html', swig.renderFile);
 app.use(favicon(__dirname + '/public/default/assets/images/favicon.ico'));
 app.use(logger('dev'));
 app.use(logger({ stream: accessLog }));
