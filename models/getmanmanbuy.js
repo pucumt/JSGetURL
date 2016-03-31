@@ -2,7 +2,8 @@
 	Q = require("q"),
 	jsdom = require("jsdom"),
 	$ = require("jquery")(jsdom.jsdom().defaultView),
-	Iconv = require('iconv-lite');
+	Iconv = require('iconv-lite'),
+	BufferHelper = require('bufferhelper');
 
 var login = function()
 {
@@ -10,17 +11,16 @@ var login = function()
 
 	var req = http.request("http://cu.manmanbuy.com", function(res)
 	{
-		res.setEncoding('gbk');
-
-		var html = '';
+		var bufferHelper = new BufferHelper();
 
 		res.on('data', function(chunk)
 		{
-			html += chunk;
+			bufferHelper.concat(chunk);
 		})
         .on('end', function()
         {
-        	var a = $(html);
+        	var str = Iconv.decode(bufferHelper.toBuffer(), 'gb2312');
+        	var a = $(str);
         	return deferred.resolve(getposts(a.find("#retlistnewdiv")));
         });
 	});
@@ -42,11 +42,11 @@ var getposts = function(list)
 	{
 		var tds = $(this).find("tr:first td");
 		var post = {
-			title: Iconv.decode($(tds[1]).find("a:first").attr("title"), 'gb2312'),
-			price: Iconv.decode($(tds[1]).find("a:first span").text(), 'gb2312'),
-			imgFile: Iconv.decode($(tds[0]).find("img").attr("src"), 'gb2312'),
-			post: Iconv.decode($(tds[1]).find(".infoD").text(), 'gb2312'),
-			linkAddr: "http://cu.manmanbuy.com/" + Iconv.decode($(tds[1]).find("a:first").attr("href"), 'gb2312')
+			title: $(tds[1]).find("a:first").attr("title"),
+			price: $(tds[1]).find("a:first span").text(),
+			imgFile: $(tds[0]).find("img").attr("src"),
+			post: $(tds[1]).find(".infoD").text(),
+			linkAddr: "http://cu.manmanbuy.com/" + $(tds[1]).find("a:first").attr("href")
 		};
 		posts.push(post);
 	});
