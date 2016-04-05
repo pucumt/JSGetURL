@@ -41,12 +41,14 @@ var getposts = function(list)
 	list.find(".infolist").each(function(index)
 	{
 		var tds = $(this).find("tr:first td");
+		var link = $(tds[1]).find("a:first").attr("href");
 		var post = {
 			title: $(tds[1]).find("a:first").attr("title"),
 			price: $(tds[1]).find("a:first span").text(),
 			imgFile: $(tds[0]).find("img").attr("src"),
 			post: $(tds[1]).find(".infoD").text(),
-			linkAddr: "http://cu.manmanbuy.com/" + $(tds[1]).find("a:first").attr("href")
+			linkAddr: "http://cu.manmanbuy.com/" + link,
+			fromId: link.substr(10, 5)
 		};
 		posts.push(post);
 	});

@@ -1,14 +1,39 @@
 ﻿var schedule = require('node-schedule'),
-	url1 = require('../models/getmanmanbuy.js'),
-	Post = require('../../models/post.js'),
+	url1 = require('./models/getmanmanbuy.js'),
+	Post = require('./models/post.js'),
+	Setting = require('./models/setting.js'),
 	shortid = require('shortid'),
-	htmlCode = require('../../util/htmlCode.js');
+	htmlCode = require('./util/htmlCode.js');
+
+var setting = new Setting({
+	fromWeb: "manmanbuy",
+	maxId: 0
+});
+var manmanbuySetting = null;
+setting.get("manmanbuy", function(err, entity)
+{
+	if (err)
+	{
+		console.log(err);
+	}
+	manmanbuySetting = entity;
+});
 
 var j = schedule.scheduleJob('*/5 * * * *', function()
 {
 	url1(function(posts)
 	{
-		save();
+		posts.forEach(function(item)
+		{
+			if (parseInt(item.fromId) > parseInt(manmanbuySetting.maxId))
+			{
+				save(item);
+				setting.option.maxId = item.fromId;
+				setting.update();
+			}
+
+		});
+
 	});
 });
 
