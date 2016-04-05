@@ -1,0 +1,296 @@
+[Wed Mar 30 2016 13:49:36 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:41:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:50:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 13:50:25 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:41:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:50:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 14:01:14 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:41:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:50:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 14:03:14 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:42:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:51:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 14:05:01 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:43:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:52:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 14:10:56 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:41:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:50:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 14:12:31 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:41:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:50:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 14:15:35 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:28:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:37:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 17:07:56 GMT+0800 (中国标准时间)] /
+ReferenceError: data is not defined
+    at login (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:28:12)
+    at module.exports (D:\personal\nodejs\JSGetURL\models\getmanmanbuy.js:37:2)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:7:3
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at next (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:100:13)
+    at Route.dispatch (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\route.js:81:3)
+    at Layer.handle [as handle_request] (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\layer.js:82:5)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:235:24
+    at Function.proto.process_params (D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:313:12)
+    at D:\personal\nodejs\JSGetURL\node_modules\express\lib\router\index.js:229:12
+[Wed Mar 30 2016 17:14:45 GMT+0800 (中国标准时间)] /
+ReferenceError: D:\personal\nodejs\JSGetURL\views\index.ejs:41
+    39|           </td>
+    40|       </tr>
+ >> 41|       <% }) %>
+    42| <% } %>
+    43|    </tbody>
+    44| </table>
+
+success is not defined
+    at eval (eval at <anonymous> (D:\personal\nodejs\JSGetURL\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:31:1426)
+    at eval (eval at <anonymous> (D:\personal\nodejs\JSGetURL\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:32:23)
+    at eval (eval at <anonymous> (D:\personal\nodejs\JSGetURL\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:34:35)
+    at D:\personal\nodejs\JSGetURL\node_modules\ejs\lib\ejs.js:255:15
+    at Object.exports.render (D:\personal\nodejs\JSGetURL\node_modules\ejs\lib\ejs.js:293:13)
+    at View.exports.renderFile [as engine] (D:\personal\nodejs\JSGetURL\node_modules\ejs\lib\ejs.js:323:20)
+    at View.render (D:\personal\nodejs\JSGetURL\node_modules\express\lib\view.js:93:8)
+    at EventEmitter.app.render (D:\personal\nodejs\JSGetURL\node_modules\express\lib\application.js:530:10)
+    at ServerResponse.res.render (D:\personal\nodejs\JSGetURL\node_modules\express\lib\response.js:904:7)
+    at D:\personal\nodejs\JSGetURL\routes\index.js:9:8
+[Wed Mar 30 2016 18:19:26 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:19:31 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:19:54 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:20:13 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:20:16 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:20:19 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:20:20 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:21:16 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:21:19 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:21:21 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 31 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:21:42 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 19 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:21:47 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 19 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:23:41 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 19 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
+[Wed Mar 30 2016 18:23:48 GMT+0800 (中国标准时间)] /
+Error: Unexpected end of tag "if" on line 19 in file D:\personal\nodejs\JSGetURL\views\index.html.
+    at Object.exports.throwError (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:183:9)
+    at parseTag (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:532:15)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:640:15
+    at Object.exports.each (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\utils.js:45:11)
+    at Object.exports.parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\parser.js:624:9)
+    at parse (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:354:19)
+    at precompile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:486:23)
+    at compile (D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:606:16)
+    at D:\personal\nodejs\JSGetURL\node_modules\swig\lib\swig.js:684:27
+    at tryToString (fs.js:414:3)
