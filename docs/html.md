@@ -1,1 +1,0 @@
-1. disable的控件不回传，要用readonly
