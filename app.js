@@ -19,21 +19,33 @@ setting.get("manmanbuy", function(err, entity)
 	manmanbuySetting = entity;
 });
 
+//var i = 0;
 var j = schedule.scheduleJob('*/5 * * * *', function()
 {
 	url1(function(posts)
 	{
-		posts.forEach(function(item)
+		posts.sort(function(a, b)
+		{
+			return parseInt(a.fromId) - parseInt(b.fromId);
+		})
+		.forEach(function(item)
 		{
 			if (parseInt(item.fromId) > parseInt(manmanbuySetting.maxId))
 			{
 				save(item);
 				setting.option.maxId = item.fromId;
-				setting.update();
+				setting.update(function(err)
+				{
+					if (err)
+					{
+						console.log(err);
+					}
+				});
+				manmanbuySetting.maxId = item.fromId;
 			}
 
 		});
-
+		//console.log("hello world!" + (i++));
 	});
 });
 
