@@ -1,61 +1,98 @@
 ﻿var schedule = require('node-schedule'),
-	url1 = require('./models/getmanmanbuy.js'),
+	urlManManBuy = require('./models/getmanmanbuy.js'),
+	urlSMZDM = require('./models/smzdm.js'),
 	Post = require('./models/post.js'),
 	Setting = require('./models/setting.js'),
 	shortid = require('shortid'),
 	htmlCode = require('./util/htmlCode.js');
 
-var setting = new Setting({
+var manmanbuySetting = {
 	fromWeb: "manmanbuy",
 	maxId: 0
-});
-var manmanbuySetting = null;
-setting.get("manmanbuy", function(err, entity)
-{
-	if (err)
-	{
+};
+
+var smzdmSetting = {
+	fromWeb: "smzdm",
+	maxId: 0
+};
+
+Setting.get(function(err, entities) {
+	if (err) {
 		console.log(err);
 	}
-	manmanbuySetting = entity;
-});
 
-//var i = 0;
-var j = schedule.scheduleJob('*/5 * * * *', function()
-{
-	url1(function(posts)
-	{
-		posts.sort(function(a, b)
-		{
-			return parseInt(a.fromId) - parseInt(b.fromId);
-		})
-		.forEach(function(item)
-		{
-			if (parseInt(item.fromId) > parseInt(manmanbuySetting.maxId))
-			{
-				save(item);
-				setting.option.maxId = item.fromId;
-				setting.update(function(err)
-				{
-					if (err)
-					{
-						console.log(err);
-					}
-				});
-				manmanbuySetting.maxId = item.fromId;
+	if (entities.length > 0) {
+		entities.forEach(function(entity) {
+			switch (entity.fromWeb) {
+				case "manmanbuy":
+					manmanbuySetting = entity;
+					break;
+				case "smzdm":
+					smzdmSetting = entity;
+					break;
 			}
+		});
+	}
+
+	if (manmanbuySetting.maxId == 0) {
+		new Setting(manmanbuySetting).save(function(err) {
 
 		});
-		//console.log("hello world!" + (i++));
-	});
+	}
+
+	if (smzdmSetting.maxId == 0) {
+		new Setting(smzdmSetting).save(function(err) {
+
+		});
+	}
+	start();
 });
 
-var save = function(entity)
-{
+var start = function() {
+	//var i = 0;
+	var isdone = true;
+	var j = schedule.scheduleJob('*/1 * * * *', function() {
+		if (!isdone) return;
+
+		isdone = false;
+		handle(manmanbuySetting, urlManManBuy, function() {
+			handle(smzdmSetting, urlSMZDM, function() {
+				isdone = true;
+			});
+		});
+	});
+}
+
+var handle = function(settings, handles, callback) {
+	var settingM = new Setting(settings);
+	handles(function(posts) {
+		posts.sort(function(a, b) {
+				return parseInt(a.fromId) - parseInt(b.fromId);
+			})
+			.forEach(function(item) {
+				if (parseInt(item.fromId) > parseInt(settings.maxId)) {
+					save(item);
+					settingM.option.maxId = item.fromId;
+					settingM.update(function(err) {
+						if (err) {
+							console.log(err);
+						}
+					});
+					settings.maxId = item.fromId;
+				}
+
+			});
+
+		callback();
+	});
+}
+
+var save = function(entity) {
 	post = new Post({
 		shortid: shortid.generate(),
 		title: entity.title,
 		price: entity.price,
-		imgFile: entity.img,
+		imgFile: entity.imgFile,
 		linkAddr: entity.linkAddr,
 		post: htmlCode.htmlEscape(entity.post),
 		recordBy: "管理员",
@@ -64,10 +101,8 @@ var save = function(entity)
 		fromWeb: "manmanbuy",
 		fromId: ""
 	});
-	post.save(function(err)
-	{
-		if (err)
-		{
+	post.save(function(err) {
+		if (err) {
 			console.log(err);
 		}
 	});

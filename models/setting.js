@@ -36,31 +36,13 @@ Setting.prototype.save = function(callback)
 };
 
 //读取用户信息
-Setting.prototype.get = function(fromWeb, callback)
+Setting.get = function(callback)
 {
-	var self = this;
 	//打开数据库
-	settingModel.findOne({ fromWeb: fromWeb }, function(err, entity)
-	{
-		if (err)
-		{
-			return callback(err);
-		}
-
-		if (!entity)
-		{
-			self.option = {
-				fromWeb: fromWeb,
-				maxId: 0
-			};
-			self.save(callback);
-		}
-		else
-		{
-			callback(null, entity);
-		}
-		//db.close();
-	});
+	settingModel.find({ })
+	.exec(function(err, entities) {
+            callback(null, entities);
+        });
 };
 
 Setting.prototype.update = function(callback)
