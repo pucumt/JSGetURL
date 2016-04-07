@@ -68,10 +68,10 @@ var start = function()
 		isdone = false;
 		handle(manmanbuySetting, urlManManBuy, function()
 		{
-			handle(smzdmSetting, urlSMZDM, function()
-			{
-				isdone = true;
-			});
+			//handle(smzdmSetting, urlSMZDM, function()
+			//{
+			isdone = true;
+			//});
 		});
 	});
 }
