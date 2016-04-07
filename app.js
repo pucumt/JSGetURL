@@ -16,14 +16,19 @@ var smzdmSetting = {
 	maxId: 0
 };
 
-Setting.get(function(err, entities) {
-	if (err) {
+Setting.get(function(err, entities)
+{
+	if (err)
+	{
 		console.log(err);
 	}
 
-	if (entities.length > 0) {
-		entities.forEach(function(entity) {
-			switch (entity.fromWeb) {
+	if (entities.length > 0)
+	{
+		entities.forEach(function(entity)
+		{
+			switch (entity.fromWeb)
+			{
 				case "manmanbuy":
 					manmanbuySetting = entity;
 					break;
@@ -34,47 +39,62 @@ Setting.get(function(err, entities) {
 		});
 	}
 
-	if (manmanbuySetting.maxId == 0) {
-		new Setting(manmanbuySetting).save(function(err) {
+	if (manmanbuySetting.maxId == 0)
+	{
+		new Setting(manmanbuySetting).save(function(err)
+		{
 
 		});
 	}
 
-	if (smzdmSetting.maxId == 0) {
-		new Setting(smzdmSetting).save(function(err) {
+	if (smzdmSetting.maxId == 0)
+	{
+		new Setting(smzdmSetting).save(function(err)
+		{
 
 		});
 	}
 	start();
 });
 
-var start = function() {
+var start = function()
+{
 	//var i = 0;
 	var isdone = true;
-	var j = schedule.scheduleJob('*/1 * * * *', function() {
+	var j = schedule.scheduleJob('*/5 * * * *', function()
+	{
 		if (!isdone) return;
 
 		isdone = false;
-		handle(manmanbuySetting, urlManManBuy, function() {
-			handle(smzdmSetting, urlSMZDM, function() {
+		handle(manmanbuySetting, urlManManBuy, function()
+		{
+			handle(smzdmSetting, urlSMZDM, function()
+			{
 				isdone = true;
 			});
 		});
 	});
 }
 
-var handle = function(settings, handles, callback) {
+var handle = function(settings, handles, callback)
+{
 	var settingM = new Setting(settings);
-	handles(function(posts) {
-		posts.sort(function(a, b) {
-				return parseInt(a.fromId) - parseInt(b.fromId);
-			})
-			.forEach(function(item) {
-				if (parseInt(item.fromId) > parseInt(settings.maxId)) {
+	handles(function(posts)
+	{
+		posts.sort(function(a, b)
+		{
+			return parseInt(a.fromId) - parseInt(b.fromId);
+		})
+			.forEach(function(item)
+			{
+				if (parseInt(item.fromId) > parseInt(settings.maxId))
+				{
 					save(item);
 					settingM.option.maxId = item.fromId;
-					settingM.update(function(err) {
-						if (err) {
+					settingM.update(function(err)
+					{
+						if (err)
+						{
 							console.log(err);
 						}
 					});
@@ -87,7 +107,8 @@ var handle = function(settings, handles, callback) {
 	});
 }
 
-var save = function(entity) {
+var save = function(entity)
+{
 	post = new Post({
 		shortid: shortid.generate(),
 		title: entity.title,
@@ -101,8 +122,10 @@ var save = function(entity) {
 		fromWeb: "manmanbuy",
 		fromId: ""
 	});
-	post.save(function(err) {
-		if (err) {
+	post.save(function(err)
+	{
+		if (err)
+		{
 			console.log(err);
 		}
 	});
